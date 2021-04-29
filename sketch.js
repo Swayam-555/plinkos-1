@@ -18,6 +18,10 @@ function setup() {
   for (var k = 0; k <=80; k = k + 80) {
     divisions.push(new Divisions(k, height-divisionHeight/2, 10, divisionHeight));
   }
+  
+
+  
+
 
   //create 1st row of plinko objects
   for (var j = 75; j <=width; j=j+50) { 
@@ -31,13 +35,19 @@ function setup() {
   }
 
   //create 3rd row of plinko objects
-
+  for (var j = 25; j <=width-20; j=j+50) 
+  {
+    plinkos.push(new Plinko(j,275));
+  }
   
   //create 4th row of plinko objects
-
+  for (var j = 0; j <=width-30; j=j+50) 
+  {
+    plinkos.push(new Plinko(j,375));
+  }
 
   //create particle objects
-  
+   
     
 }
  

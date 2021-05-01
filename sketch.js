@@ -15,7 +15,7 @@ function setup() {
   ground = new Ground(width/2,height,width,20);
 
   //create division objects
-  for (var k = 0; k <=80; k = k + 80) {
+  for (var k = 0; k <=width-50; k = k + 80) {
     divisions.push(new Divisions(k, height-divisionHeight/2, 10, divisionHeight));
   }
   

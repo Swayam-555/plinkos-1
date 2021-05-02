@@ -19,7 +19,7 @@ function setup() {
     divisions.push(new Divisions(k, height-divisionHeight/2, 10, divisionHeight));
   }
   
-
+  
   
 
 
@@ -48,7 +48,9 @@ function setup() {
 
   //create particle objects
    
-    
+    if(frameCount%60 === 0){
+      particles.push(new Particles(random(width/2-10,width/2+10),10,10));
+    }
 }
  
 
@@ -71,5 +73,7 @@ function draw() {
   }
 
   //display the paricles 
-
+   if(frameCount%60 === particles.length) {
+    particles[frameCount].display();
+  }
 }
